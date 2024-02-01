@@ -21,9 +21,48 @@ $xxl: 1440px;
 /* END - FRONT PAGE - TOP SLIDER */
 
 /* BEGIN - FRONT PAGE - EXCITING TOPICS SLIDER */
+
 .esmc-frp-exciting-topics-slider {
 
+  .cms-element-solid-ase-content-slider.solid-ase-content-slider-controls-horizontal-inside-center-edges .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #ff0000;
+    text-align: left;
+    padding: 0;
+
+    .btn {
+      position: relative;
+      font-family: "RobotoSlab", sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #fff;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      overflow: visible;
+
+      &::after {
+        content: "→";
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.56s ease;
+      }
+
+      &:hover {
+        &::after {
+          right: -18px;
+        }
+      }
+    }
+
+  }
 }
+
 
 /* END - FRONT PAGE - EXCITING TOPICS SLIDER */
 
