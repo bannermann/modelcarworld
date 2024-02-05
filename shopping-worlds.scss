@@ -3,6 +3,7 @@ $eseom-primary-BoxShadow: #004E7C;
 $eseom-primary-darkblue: #09294A;
 $eseom-core-secondary: #495873;
 $eseom-primary-Bluebrixx: #130E72;
+$eseom-section-bg-grey: #F5F6FC;
 
 /* media queries */
 $md: 768px;
@@ -174,6 +175,51 @@ body .cms-block {
 /* BEGIN - FRONT PAGE - POPULAR CATEGORIES SECTION */
 .esmc-frp-popular-categories {
 
+  color: $eseom-primary-darkblue;
+  font-family: "RobotoSlab", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+
+  background-color: $eseom-section-bg-grey;
+
+  .cms-element-image-text {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
+
+  .cms-element-image-text {
+    background-color: $eseom-section-bg-grey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .cms-image-text-media-container {
+    text-align: center;
+
+    img {
+      max-width: 132px;
+      @media only screen and (min-width: $md) {
+        max-width: 190px;
+      }
+    }
+
+  }
+
 }
 
 /* END - FRONT PAGE - POPULAR CATEGORIES SECTION */
@@ -205,14 +251,15 @@ body .cms-block {
     text-align: center;
 
     .gap-4 {
-      gap: 0!important;
+      gap: 0 !important;
     }
+
     @media only screen and (min-width: $md) {
       padding: 90px;
       text-align: left;
 
       .gap-4 {
-        gap: 16px!important;
+        gap: 16px !important;
       }
     }
 
@@ -227,16 +274,16 @@ body .cms-block {
   }
 
   .cms-image-text-horizontal-container.d-flex.flex-column {
-    flex-direction: column-reverse!important;
+    flex-direction: column-reverse !important;
     @media only screen and (min-width: $md) {
-      flex-direction: row!important;
+      flex-direction: row !important;
     }
   }
 
   .cms-image-text-horizontal-element-btn-wrapper {
-    justify-content: center!important;
+    justify-content: center !important;
     @media only screen and (min-width: $md) {
-      justify-content: flex-start!important;
+      justify-content: flex-start !important;
     }
   }
 }
