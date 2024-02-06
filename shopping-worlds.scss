@@ -22,21 +22,22 @@ $xxl: 1440px;
 
 /* BEGIN - FRONT PAGE - EXCITING TOPICS SLIDER */
 
-body .cms-section,
-body .cms-block {
-
-  overflow: visible;
-
-  @media only screen and (min-width: $md) {
-    overflow: hidden;
-  }
-
-  @media only screen and (min-width: $lg) {
-    overflow: visible;
-  }
-}
 
 .esmc-frp-exciting-topics-slider {
+
+  .cms-section,
+  .cms-block {
+
+    overflow: visible;
+
+    @media only screen and (min-width: $md) {
+      overflow: hidden;
+    }
+
+    @media only screen and (min-width: $lg) {
+      overflow: visible;
+    }
+  }
 
   .cms-element-solid-ase-content-slider {
 
@@ -77,6 +78,7 @@ body .cms-block {
       border: none;
       box-shadow: none;
       overflow: visible;
+
       &::after {
         content: "→";
         position: absolute;
@@ -85,6 +87,7 @@ body .cms-block {
         transform: translateY(-50%);
         transition: all 0.56s ease;
       }
+
       &:hover {
         &::after {
           right: -18px;
