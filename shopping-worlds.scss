@@ -84,31 +84,14 @@ h1 {
 
 .esmc-frp-exciting-topics-slider {
 
-  .cms-section,
-  .cms-block {
+  overflow: visible !important;
 
-    overflow: visible;
-
-    @media only screen and (min-width: $md) {
-      overflow: hidden;
-    }
-
-    @media only screen and (min-width: $lg) {
-      overflow: visible;
-    }
+  @media only screen and (min-width: $md) {
+    overflow: hidden !important;
   }
 
-  .cms-element-solid-ase-content-slider {
-
-    overflow: visible;
-
-    @media only screen and (min-width: $md) {
-      overflow: hidden;
-    }
-
-    @media only screen and (min-width: $lg) {
-      overflow: visible;
-    }
+  @media only screen and (min-width: $lg) {
+    overflow: visible !important;
   }
 
   .cms-element-solid-ase-content-slider .tns-nav {
