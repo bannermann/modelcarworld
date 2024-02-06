@@ -1,3 +1,10 @@
+$eseom-primary-MainBlue: #00649F;
+$eseom-primary-BoxShadow: #004E7C;
+$eseom-primary-darkblue: #09294A;
+$eseom-core-secondary: #495873;
+$eseom-primary-Bluebrixx: #130E72;
+$eseom-section-bg-grey: #F5F6FC;
+
 /* media queries */
 $md: 768px;
 $lg: 992px;
@@ -9,6 +16,58 @@ $xxl: 1440px;
 
 /* end mixins */
 
+h1 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+
+  @media only screen and (min-width: $md) {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 52px;
+  }
+}
+
+.btn-primary-arrow {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+
+  min-width: 210px;
+  border-radius: 12px;
+  background: $eseom-primary-MainBlue;
+  box-shadow: 0 -2px 0 0 $eseom-primary-BoxShadow inset;
+  color: $sw-color-buy-button-text;
+
+  display: inline-flex;
+  height: 52px;
+  padding: 12px 24px 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  transition: all 0.56s ease;
+
+  &::after {
+    content: "→";
+    font-size: 25px;
+    transition: all 0.56s ease;
+  }
+
+  &:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.20) 100%), $eseom-primary-MainBlue;
+
+    &::after {
+      transform: translateX(25%);
+    }
+  }
+}
 
 /* BEGIN - FRONT PAGE - TOP SLIDER */
 .esmc-frp-main-slider {
@@ -70,7 +129,7 @@ $xxl: 1440px;
 
     .btn {
       position: relative;
-      font-family: "RobotoSlab", sans-serif;
+      font-family: "RobotoSlab", serif;
       font-size: 24px;
       font-weight: 900;
       color: #fff;
@@ -79,18 +138,24 @@ $xxl: 1440px;
       box-shadow: none;
       overflow: visible;
 
+      display: inline-flex;
+      height: 52px;
+      padding: 12px 24px 12px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-shrink: 0;
+      transition: all 0.56s ease;
+
       &::after {
         content: "→";
-        position: absolute;
-        right: -10px;
-        top: 50%;
-        transform: translateY(-50%);
+        font-size: 25px;
         transition: all 0.56s ease;
       }
 
       &:hover {
         &::after {
-          right: -18px;
+          transform: translateX(25%);
         }
       }
     }
@@ -111,6 +176,55 @@ $xxl: 1440px;
 /* BEGIN - FRONT PAGE - POPULAR CATEGORIES SECTION */
 .esmc-frp-popular-categories {
 
+  color: $eseom-primary-darkblue;
+  font-family: "RobotoSlab", serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+
+  background-color: $eseom-section-bg-grey;
+
+  .cms-element-image-text {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100px;
+      height: 100px;
+      background-color: white;
+      border-radius: 50%;
+      z-index: -1;
+      @media only screen and (min-width: $md) {
+        width: 120px;
+        height: 120px;
+      }
+    }
+  }
+
+  .cms-element-image-text {
+    background-color: $eseom-section-bg-grey;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .cms-image-text-media-container {
+    text-align: center;
+
+    img {
+      max-width: 132px;
+      @media only screen and (min-width: $md) {
+        max-width: 190px;
+      }
+    }
+
+  }
+
 }
 
 /* END - FRONT PAGE - POPULAR CATEGORIES SECTION */
@@ -118,6 +232,65 @@ $xxl: 1440px;
 /* BEGIN - FRONT PAGE - TOPIC OF THE MONTH SECTION */
 .esmc-frp-topic-of-month {
 
+  h1,
+  h3 {
+    color: #fff;
+    margin-bottom: 16px;
+
+    @media only screen and (min-width: $md) {
+      margin: 0;
+    }
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+  }
+
+  .cms-image-text-horizontal-text-inner {
+    padding: 32px 16px 12px;
+    text-align: center;
+
+    .gap-4 {
+      gap: 0 !important;
+    }
+
+    @media only screen and (min-width: $md) {
+      padding: 90px;
+      text-align: left;
+
+      .gap-4 {
+        gap: 16px !important;
+      }
+    }
+
+    p {
+      font-size: 19px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .cms-image-text-horizontal-container.d-flex.flex-column {
+    flex-direction: column-reverse !important;
+    @media only screen and (min-width: $md) {
+      flex-direction: row !important;
+    }
+  }
+
+  .cms-image-text-horizontal-element-btn-wrapper {
+    justify-content: center !important;
+    @media only screen and (min-width: $md) {
+      justify-content: flex-start !important;
+    }
+  }
 }
 
 /* END - FRONT PAGE - TOPIC OF THE MONTH SECTION */
