@@ -22,6 +22,7 @@ $xxl: 1440px;
     height: 32px;
   }
 }
+
 /* end mixins */
 
 h1 {
@@ -175,6 +176,10 @@ h1 {
     overflow: visible !important;
   }
 
+  .tns-nav {
+    margin-top: 10px;
+  }
+
   .cms-block {
     overflow: visible !important;
     @media only screen and (min-width: $md) {
@@ -223,7 +228,7 @@ h1 {
       border: none;
       box-shadow: none;
       overflow: visible;
-
+      z-index: 10;
       display: inline-flex;
       height: 52px;
       padding: 12px 24px 12px 24px;
