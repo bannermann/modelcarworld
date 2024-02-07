@@ -110,7 +110,17 @@ h1 {
           position: relative;
           width: 100%;
           justify-content: center;
-          margin-top: 31px;
+          margin-top: 16px;
+        }
+      }
+
+      .tns-nav {
+        @media only screen and (min-width: $lg) {
+          position: relative;
+          bottom: 0;
+          left: 0;
+          justify-content: center;
+          transform: unset;
         }
       }
     }
