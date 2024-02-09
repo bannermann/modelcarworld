@@ -203,9 +203,7 @@ p {
         }
 
         @media only screen and (max-width: $lg) {
-          padding-top: 0;
-          padding-left: 4.5%;
-          padding-right: 4.5%;
+          padding: 0 4.5% 18px;
         }
 
         .content {
