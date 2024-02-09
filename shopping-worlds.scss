@@ -26,64 +26,6 @@ $xxl: 1440px;
 /* end mixins */
 /* font definitions */
 
-h1 {
-  font-family: "RobotoSlab", serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 36px;
-  letter-spacing: 0.5px;
-
-  @media only screen and (min-width: $md) {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 52px;
-    letter-spacing: 0.5px;
-  }
-}
-
-h2 {
-  font-family: "RobotoSlab", serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 38px;
-  letter-spacing: 0.5px;
-
-  @media only screen and (min-width: $md) {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 44px;
-    letter-spacing: 0.5px;
-  }
-}
-
-h3 {
-  font-family: "RobotoSlab", serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 28px;
-  letter-spacing: 0.5px;
-
-  @media only screen and (min-width: $md) {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 36px;
-    letter-spacing: 0.5px;
-  }
-}
-
-p {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-}
-
 /* font definitions */
 
 .btn-primary-arrow {
@@ -140,7 +82,7 @@ p {
         .solid-ase-content-slider-controls-container {
           display: none;
 
-          @media only screen and (min-width: $md) {
+          @include media-breakpoint-up(md) {
             display: block;
           }
         }
@@ -149,7 +91,7 @@ p {
           left: 20px !important;
           top: 47%;
 
-          @media only screen and (min-width: $xxl) {
+          @include media-breakpoint-up(xxl) {
             left: calc((100% - 1420px)/2) !important;
           }
         }
@@ -158,7 +100,7 @@ p {
           right: 20px !important;
           top: 47%;
 
-          @media only screen and (min-width: $xxl) {
+          @include media-breakpoint-up(xxl) {
             right: calc((100% - 1420px)/2) !important;
           }
         }
@@ -171,7 +113,7 @@ p {
           margin-bottom: 44px;
         }
 
-        @media only screen and (min-width: $lg) {
+        @include media-breakpoint-up(lg) {
           position: relative;
           width: 100%;
           justify-content: center;
@@ -180,7 +122,7 @@ p {
       }
 
       .tns-nav {
-        @media only screen and (min-width: $lg) {
+        @include media-breakpoint-up(lg) {
           position: relative;
           bottom: 0;
           left: 0;
@@ -191,7 +133,7 @@ p {
     }
 
     .slide-container {
-      @media only screen and (min-width: $lg) {
+      @include media-breakpoint-up(lg) {
         flex-direction: row;
         height: 560px;
       }
@@ -203,7 +145,7 @@ p {
           // content: "";
         }
 
-        @media only screen and (min-width: $lg) {
+        @include media-breakpoint-up(lg) {
           order: 1;
           padding-right: 7.871%;
           margin-top: auto;
@@ -211,14 +153,14 @@ p {
         }
 
         img {
-          @media only screen and (min-width: $lg) {
+          @include media-breakpoint-up(lg) {
             width: auto;
           }
         }
       }
 
       .content-container {
-        @media only screen and (min-width: $lg) {
+        @include media-breakpoint-up(lg) {
           padding-right: 0;
         }
 
@@ -233,7 +175,7 @@ p {
             padding-top: 0;
           }
 
-          @media only screen and (min-width: $lg) {
+          @include media-breakpoint-up(lg) {
             margin-top: 56.5px;
             margin-bottom: 56.5px;
             padding-right: 11%;
@@ -247,7 +189,7 @@ p {
         text-align: center;
       }
 
-      @media only screen and (min-width: $lg) {
+      @include media-breakpoint-up(lg) {
         padding-left: 12.9%;
       }
 
@@ -282,11 +224,11 @@ p {
 
   overflow: visible !important;
 
-  @media only screen and (min-width: $md) {
+  @include media-breakpoint-up(md) {
     overflow: hidden !important;
   }
 
-  @media only screen and (min-width: $lg) {
+  @include media-breakpoint-up(lg) {
     overflow: visible !important;
   }
 
@@ -296,22 +238,22 @@ p {
 
   .cms-block {
     overflow: visible !important;
-    @media only screen and (min-width: $md) {
+    @include media-breakpoint-up(md) {
       overflow: hidden !important;
     }
 
-    @media only screen and (min-width: $lg) {
+    @include media-breakpoint-up(lg) {
       overflow: visible !important;
     }
   }
 
   .cms-element-solid-ase-content-slider {
     overflow: visible;
-    @media only screen and (min-width: $md) {
+    @include media-breakpoint-up(md) {
       overflow: hidden;
     }
 
-    @media only screen and (min-width: $lg) {
+    @include media-breakpoint-up(lg) {
       overflow: visible;
     }
   }
@@ -401,7 +343,7 @@ p {
       background-color: white;
       border-radius: 50%;
       z-index: -1;
-      @media only screen and (min-width: $md) {
+      @include media-breakpoint-up(md) {
         width: 120px;
         height: 120px;
       }
@@ -423,7 +365,7 @@ p {
 
     .cms-image-text {
       max-width: 132px;
-      @media only screen and (min-width: $md) {
+      @include media-breakpoint-up(md) {
         max-width: 190px;
       }
     }
@@ -442,7 +384,7 @@ p {
     color: #fff;
     margin-bottom: 16px;
 
-    @media only screen and (min-width: $md) {
+    @include media-breakpoint-up(md) {
       margin: 0;
     }
   }
@@ -464,7 +406,7 @@ p {
       gap: 0 !important;
     }
 
-    @media only screen and (min-width: $md) {
+    @include media-breakpoint-up(md) {
       padding: 90px;
       text-align: left;
 
@@ -485,14 +427,14 @@ p {
 
   .cms-image-text-horizontal-container.d-flex.flex-column {
     flex-direction: column-reverse !important;
-    @media only screen and (min-width: $md) {
+    @include media-breakpoint-up(md) {
       flex-direction: row !important;
     }
   }
 
   .cms-image-text-horizontal-element-btn-wrapper {
     justify-content: center !important;
-    @media only screen and (min-width: $md) {
+    @include media-breakpoint-up(md) {
       justify-content: flex-start !important;
     }
   }
