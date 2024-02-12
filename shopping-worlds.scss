@@ -145,14 +145,24 @@ $xxl: 1440px;
       }
 
       &::before {
-        content: url('https://sw65-modelcarworld-dev.eseom.info/media/f6/30/64/1707737817/header-rings.png');
+        content: "";
+        background-image: url('https://sw65-modelcarworld-dev.eseom.info/media/f6/30/64/1707737817/header-rings.png');
+        background-repeat: no-repeat;
+        background-size: contain;
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100px;
-        height: 100px;
+        height: 100%;
         z-index: 0;
+        top: 2px;
+        right: -23%;
+        width: 242%;
+
+        @include media-breakpoint-up(lg) {
+          top: 0;
+          left: 0;
+          right: unset;
+          width: 100%;
+        }
       }
 
       .background-media-container {
