@@ -133,17 +133,33 @@ $xxl: 1440px;
     }
 
     .slide-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      background-color: transparent;
+      overflow: hidden;
       @include media-breakpoint-up(lg) {
         flex-direction: row;
         height: 560px;
       }
 
+      &::before {
+        content: url('https://sw65-modelcarworld-dev.eseom.info/media/f6/30/64/1707737817/header-rings.png');
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100px;
+        /* Adjust width as needed */
+        height: 100px;
+        /* Adjust height as needed */
+        z-index: 1;
+        /* Ensure it's behind the content */
+      }
+
       .background-media-container {
         position: relative;
-
-        &::before {
-          // content: "";
-        }
 
         @include media-breakpoint-up(lg) {
           order: 1;
