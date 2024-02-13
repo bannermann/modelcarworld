@@ -67,6 +67,18 @@ $xxl: 1440px;
   }
 }
 
+/* BEGIN - FRONT PAGE - USP */
+.top-bar .top-bar-left-content-wrapper .top-bar-left-content-txt {
+  font-size: 13px;
+  font-weight: 500;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+/* END - FRONT PAGE - USP */
+
 /* BEGIN - FRONT PAGE - TOP SLIDER */
 .esmc-frp-main-slider {
   .solid-ase-content-slider-control {
