@@ -1,0 +1,28 @@
+/* BEGIN - STYLES FOR THE STORES / STORE LOCATION PAGE */
+.stores-faq-row {
+
+  .accordion {
+    .card {
+      .card-header {
+        background-color: #F0F5FF;
+        border-radius: 8px;
+        height: 53px;
+        padding: 9px 24px;
+
+        .faq-btn-text {
+          font-family: var(--bs-body-font-family);
+          font-size: 19px;
+          font-weight: var(--bs-body-font-weight);
+          line-height: 29px;
+
+        }
+      }
+
+      .card-body {
+        padding: 24px
+      }
+    }
+  }
+}
+
+/* END - STYLES FOR THE STORES / STORE LOCATION PAGE */
